@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `idx_rsvp_history_request` ON `rsvp_history` (`event_id`,`player_id`,`request_id`) WHERE "rsvp_history"."action" = 'reserved' and "rsvp_history"."request_id" is not null;
